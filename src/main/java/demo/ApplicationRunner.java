@@ -31,7 +31,7 @@ public class ApplicationRunner implements CommandLineRunner {
         int i_min = progress.readInt("i", 0);
 
         ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource("Proficiency.only.txt").getFile());
+        File file = new File(classLoader.getResource("words/4.Advanced.txt").getFile());
 
         Scanner scanner = new Scanner(file);
         List<String> lines = new ArrayList<String>();
